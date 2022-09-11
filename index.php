@@ -9,90 +9,110 @@
    
 ?>
 
-<html>
-	<head>
-		<title>Twitter</title>
-		<meta charset="UTF-8" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"/>
-        <!-- <link rel="stylesheet" href="assets/css/style-complete.css"/> -->
-        <link rel="stylesheet" href="assets/css/index_style.css?v=<?php echo time(); ?>">
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/all.min.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="assets/css/2/master.css">
+</head>
 
-		<link rel="shortcut icon" type="image/png" href="assets/images/twitter.svg"> 
-	</head>
 <body>
-<main class="twt-main">
-            <section class="twt-login">
-                <?php include 'includes/login.php';  ?>
-                    <div class="slow-login">
-                        <img class="login-bird" src="https://image.ibb.co/d0hbJ9/twt_icon.png" alt="bird">
-                        <button class="login-small-display signin-btn pri-btn">Log in</button>
-                        <span class="front-para">See what’s happening in the world right now</span>
-                        <span class="join">Join Twitter today.</span>
-                        <button type="button" id="auto" onclick="" class="signup-btn pri-btn" data-toggle="modal" data-target="#exampleModalCenter">
-                            Sign Up</button>
-                            
-                             
-                            <!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 style="font-weight: 700;" class="modal-title" id="exampleModalLongTitle">Sign Up</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+<section class="main-page">
+    <div class="left">
+    <div class="left-content">
+      <div>
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <h3 class="left-content-heading">Find your interests</h3>
       </div>
-      <div class="modal-body">
-                    
-         <?php  include 'includes/signup-form.php' ?>
+      <div>
+      <i class="fa-solid fa-user-group"></i>
+      <h3 class="left-content-heading">Explore what people are talking about</h3>
       </div>
-      
+      <div>
+      <i class="fa-solid fa-comment"></i>
+      <h3 class="left-content-heading">Join the people</h3>
+      </div>
     </div>
-  </div>
-</div>
+    </div>
+    <div class="right">
+     <div class="middle-content">
+      <i class=" fab fa-twitter"></i>
+     <h1>See what's happening in the world right now</h1>
+     <h4>Join Twitter now</h4>
+     <a href="signup.php" class="sign-up"> Sign Up</a>
+     <a href="login.php" class="log-in"> Log In </a>
+     
+     </div>
+
+    </div>
+    <footer class="main-page-footer" role=" contentinfo">
+     <ul>
+      <li>
+         <a href="#">About</a>
+      </li>
+      <li>
+         <a href="#">Help Center</a>
+      </li>
+      <li>
+         <a href="#">Terms of service</a>
+      </li>
+      <li>
+         <a href="#">Privacy Policy</a>
+      </li>
+      <li>
+         <a href="#">Cookle Policy</a>
+      </li>
+      <li>
+         <a href="#">Ads info</a>
+      </li>
+      <li>
+         <a href="#">Blog</a>
+      </li>
+      <li>
+         <a href="#">Status</a>
+      </li>
+      <li>
+         <a href="#">Career</a>
+      </li>
+      <li>
+         <a href="#">Brand Resources</a>
+      </li>
+      <li>
+         <a href="#">Advertising</a>
+      </li>
+      <li>
+         <a href="#">Marketing</a>
+      </li>
+      <li>
+         <a href="#">Twitter for Business</a>
+      </li>
+      <li>
+         <a href="#">Developer</a>
+      </li>
+      <li>
+         <a href="#">Directory</a>
+      </li>
+      <li>
+         <a href="#">Settings</a>
+      </li>
+      <li>
+         <a href="#">&copy;<?php echo date('Y'); ?>Twitter.Inc</a>
+      </li>
+      
+     </ul>
 
 
-                    </div>
-            </section>
-            <section class="twt-features">
-                <div class="features-div">
-                    <img class="twt-icon" src='https://image.ibb.co/bzvrkp/search_icon.png'>
-                    <p>Follow your interests.</p>
-                    <img class="twt-icon" src="https://image.ibb.co/mZPTWU/heart_icon.png">
-                    <p>Hear what people are talking about.</p>
-                    <img class="twt-icon" src="https://image.ibb.co/kw2Ad9/conv_icon.png">
-                    <p>Join the conversation.</p>
-                </div>
-            </section>
-            <footer>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Help Center</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Status</a></li>
-                    <li><a href="#">Jobs</a></li>
-                    <li><a href="#">Terms</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Cookies</a></li>
-                    <li><a href="#">Ads info</a></li>
-                    <li><a href="#">Brand</a></li>
-                    <li><a href="#">Apps</a></li>
-                    <li><a href="#">Advertise</a></li>
-                    <li><a href="#">Marketing</a></li>
-                    <li><a href="#">Businesses</a></li>
-                    <li><a href="#">Developers</a></li>
-                    <li><a href="#">Directory</a></li>
-                    <li><a href="#">Settings</a></li>
-                    <li>© 2021 Twitter Clone</li>
-                </ul>
-            </footer>
-        </main>
-        
-        <script src="assets/js/jquery-3.4.1.slim.min.js"></script>
-        <script src="assets/js/popper.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/mine.js"></script>
+
+    </footer>
+ </section>
 </body>
 </html>
